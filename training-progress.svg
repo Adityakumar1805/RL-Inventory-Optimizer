@@ -1,0 +1,78 @@
+<svg viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="chartBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f9fafb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="progressGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="800" fill="white"/>
+  <text x="50" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#1f2937">⚡ Training Progress</text>
+  <rect x="50" y="80" width="1300" height="80" rx="12" fill="#f9fafb" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="70" y="110" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#4b5563">Episode 180 / 200</text>
+  <text x="1320" y="110" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#2563eb" text-anchor="end">90%</text>
+  <rect x="70" y="120" width="1260" height="28" rx="14" fill="#e5e7eb" stroke="#d1d5db" stroke-width="2"/>
+  <rect x="70" y="120" width="1134" height="28" rx="14" fill="url(#progressGrad)"/>
+  <rect x="50" y="190" width="1300" height="350" rx="12" fill="url(#chartBg)" stroke="#d1d5db" stroke-width="2"/>
+  <text x="700" y="220" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1f2937">Profit History</text>
+  <line x1="100" y1="250" x2="100" y2="500" stroke="#374151" stroke-width="2"/>
+  <line x1="100" y1="500" x2="1300" y2="500" stroke="#374151" stroke-width="2"/>
+  <text x="85" y="260" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="end">₹300K</text>
+  <text x="85" y="340" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="end">₹250K</text>
+  <text x="85" y="420" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="end">₹200K</text>
+  <text x="85" y="500" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="end">₹150K</text>
+  <text x="100" y="520" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">0</text>
+  <text x="400" y="520" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">50</text>
+  <text x="700" y="520" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">100</text>
+  <text x="1000" y="520" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">150</text>
+  <text x="1300" y="520" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">200</text>
+  <g opacity="0.2" stroke="#9ca3af" stroke-width="1">
+    <line x1="100" y1="260" x2="1300" y2="260"/>
+    <line x1="100" y1="340" x2="1300" y2="340"/>
+    <line x1="100" y1="420" x2="1300" y2="420"/>
+  </g>
+  <polyline points="100,450 130,420 160,460 190,400 220,440 250,380 280,430 310,390 340,420 370,370 400,410 430,360 460,400 490,350 520,390 550,340 580,380 610,330 640,370 670,320 700,360 730,310 760,350 790,300 820,340 850,290 880,330 910,280 940,320 970,275 1000,310 1030,270 1060,300 1090,265 1120,290 1150,260 1180,280 1210,258 1240,270 1270,255 1300,260" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+  <polyline points="100,450 160,440 220,425 280,410 340,395 400,380 460,365 520,350 580,335 640,320 700,305 760,290 820,280 880,270 940,263 1000,258 1060,254 1120,251 1180,250 1240,249 1300,260" fill="none" stroke="#ef4444" stroke-width="3" filter="url(#glow)"/>
+  <rect x="1050" y="270" width="220" height="70" rx="8" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="1070" y1="295" x2="1110" y2="295" stroke="#3b82f6" stroke-width="3" opacity="0.6"/>
+  <text x="1120" y="300" font-family="Arial, sans-serif" font-size="13" fill="#4b5563">Episode Profit</text>
+  <line x1="1070" y1="320" x2="1110" y2="320" stroke="#ef4444" stroke-width="3"/>
+  <text x="1120" y="325" font-family="Arial, sans-serif" font-size="13" fill="#4b5563">Moving Avg (20)</text>
+  <text x="700" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#374151">Episode Number</text>
+  <text x="30" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#374151" transform="rotate(-90, 30, 375)">Total Profit (₹)</text>
+  <text x="50" y="580" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">Live Metrics</text>
+  <g transform="translate(50, 600)">
+    <rect width="300" height="90" rx="8" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1e40af">Current Inventory</text>
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1e3a8a">67</text>
+  </g>
+  <g transform="translate(370, 600)">
+    <rect width="300" height="90" rx="8" fill="#d1fae5" stroke="#6ee7b7" stroke-width="1"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#065f46">Demand</text>
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#064e3b">18</text>
+  </g>
+  <g transform="translate(690, 600)">
+    <rect width="300" height="90" rx="8" fill="#e9d5ff" stroke="#c084fc" stroke-width="1"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#6b21a8">Action Taken</text>
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#581c87">+20</text>
+  </g>
+  <g transform="translate(1010, 600)">
+    <rect width="340" height="90" rx="8" fill="#fed7aa" stroke="#fb923c" stroke-width="1"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#9a3412">Profit</text>
+    <text x="20" y="65" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#7c2d12">₹3,156</text>
+  </g>
+  <circle cx="150" cy="35" r="8" fill="#eab308">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
