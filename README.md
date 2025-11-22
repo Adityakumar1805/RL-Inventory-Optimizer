@@ -1,3 +1,4 @@
+<a id="top"></a>
 # RL-Inventory-Optimizer
 <!-- 🟦 PROJECT BANNER -->
 ![Banner](banner.svg)
@@ -600,7 +601,7 @@ If you use this project in your research, please cite:
 
 ### 🚀 Built with Machine Learning • Optimized for Performance • Designed for Learning
 
-**[⬆ Back to Top](#-RL-Inventory-Optimizer)**
+**[🔼 Back to Top](#top)**
 
 ---
 
